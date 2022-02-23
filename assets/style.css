@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,25 +8,177 @@
 
 :root {
 
-    --ff-primary: 'Outfit', sans-serif;
-    --ff-secondary: 'Outfit', monospace;
+    --ff-primary: 'Red Hat Display', sans-serif;
 
-    --fw-thin: 300;
-    --fw-reg: 400;
-    --fw-bold: 600;
-
+    --fw-thin: 500;
+    --fw-reg: 700;
+    --fw-bold: 900;
    
 
-    --clr-primary-cyan: hsl(178, 100%, 50%);
-    --clr-primary-blue: hsl(215, 51%, 70%);
-
+    --clr-primary-pale-blue: hsl(225, 100%, 94%);
+    --clr-primary-bright-blue: hsl(245, 75%, 52%);
    
 
-    --clr-bg-main: hsl(217, 54%, 11%);
-    --clr-bg-card: hsl(216, 50%, 16%);
-    --clr-line: hsl(215, 32%, 27%);
-    --clr-white: hsl(0, 0%, 100%);
+    --clr-pale-blue: hsl(225, 100%, 98%);
+    --clr-des-blue: hsl(224, 23%, 55%);
+    --clr-dark-blue: hsl(223, 47%, 23%);
 
-    --fs-p: 18px;
+    --fs-reg: 16px;
+}
 
+body {
+	background-image: url("../images/pattern-background-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: var(--clr-primary-pale-blue);
+	width: 100vw;
+	min-height: 100vh;
+	font-family: var(--ff-primary);
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+    line-height: 1.7;
+
+}
+
+.card-container {
+	width: 435px;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.card-image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.card-body {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: column;
+	text-align: center;
+	padding: 1rem;
+}
+
+.card-body_title {
+	color: var(--clr-dark-blue);
+	font-weight: var(--fw-bold);
+	font-size: 2rem;
+	padding: 1rem 0;
+}
+
+.card-body_subtitle {
+	color: var(--clr-des-blue);
+	font-weight: var(--fw-thin);
+	font-size: 1rem;
+	margin: 0.5rem 4rem;
+	padding: 0.5rem 0;
+}
+
+.payment-details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--clr-pale-blue);
+	gap:  2rem;
+	margin: 1rem;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.payment-details article {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.payment-details article img {
+	margin-right: 1rem;
+}
+
+.payment-plan_title {
+	color: var(--clr-dark-blue);
+	font-weight: var(--fw-bold);
+	font-size: 1.125rem;
+}
+
+.payment-plan_subtitle {
+	color: var(--clr-des-blue);
+	font-weight: var(--fw-thin);
+	font-size: 1rem;
+}
+
+
+.btn {
+	border: none;
+	padding: 0.25rem 0.85rem;
+	border-radius: 0.875rem;
+	font-weight: var(--fw-bold);
+	font-size: 1rem;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	font-weight: var(--fw-bold);
+}
+
+.btn-change {
+	background-color: transparent;
+	color: var(--clr-primary-bright-blue);
+	text-decoration: underline;
+
+}
+
+.buttons {
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+	justify-content: center;
+	margin-right: 1.875rem;
+	margin-left: 1.875rem;
+	padding: 1rem 0;
+}
+
+.btn-payment {
+	background-color: var(--clr-primary-bright-blue);
+	color: white;
+	font-weight: var(--fw-reg);
+	margin-bottom: 0.5rem;
+	padding: 0.875rem;
+	box-shadow: 0 1rem 1.125rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-payment:hover, .btn-change:hover {
+	opacity: 0.7;
+}
+
+.btn-cancel {
+	background-color: transparent;
+	color: var(--clr-des-blue);	
+	font-weight: var(--fw-reg);
+	padding: 0.875rem;
+}
+
+.btn-cancel:hover {
+	color: var(--clr-dark-blue);
+}
+
+.attribution { 
+    position: fixed;
+    width: 100%;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    bottom: 0;
+    left: 0;
+    color: var(--clr-white);
+}
+
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
 }
