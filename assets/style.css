@@ -43,7 +43,7 @@ body {
 }
 
 .card-container {
-	width: 435px;
+	width: 415px;
 	overflow: hidden;
 	margin: 0 auto;
 	background-color: white;
@@ -181,4 +181,15 @@ body {
 
 .attribution a { 
 	color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 375) {
+	.card-container {
+	width: 350px;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
 }
