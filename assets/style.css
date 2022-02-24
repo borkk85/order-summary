@@ -45,7 +45,6 @@ body {
 .card-container {
 	width: 415px;
 	overflow: hidden;
-	margin: 0 auto;
 	background-color: white;
     border-radius: 1rem;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
@@ -185,7 +184,7 @@ body {
 
 @media only screen and (min-width: 600) {
 	.card-container {
-	width: 300px;
+	width: 225px;
 
 }
 
